@@ -1,4 +1,4 @@
-import { ArrowUpRight, Code, Users, Mail, FileText } from "lucide-react"
+import { ArrowUpRight, Code, Users, Mail, FileText, GraduationCap } from "lucide-react"
 
 export function CollaborateSection() {
   return (
@@ -44,10 +44,8 @@ export function CollaborateSection() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t-2 border-border py-8 flex flex-col md:flex-row justify-between items-center gap-6 font-mono text-sm font-bold">
-        <div>COPYRIGHT 2026 PRANAV AGGARWAL</div>
-        
-        <div className="flex gap-4">
+      <footer className="border-t-2 border-border py-8 flex flex-col justify-center items-center gap-6 font-mono text-sm font-bold">
+        <div className="flex flex-wrap justify-center gap-4">
           <a href="mailto:pranawal2002@gmail.com" className="p-2 brutal-border hover:bg-accent hover:text-accent-fg transition-colors group relative">
             <Mail className="w-5 h-5" />
             <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-foreground text-background px-2 py-1 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Email</span>
@@ -64,7 +62,12 @@ export function CollaborateSection() {
             <span className="font-sans font-black text-xl leading-none">k</span>
             <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-foreground text-background px-2 py-1 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Kaggle</span>
           </a>
+          <a href="https://ds.study.iitm.ac.in/student/21F1001682" target="_blank" className="p-2 brutal-border hover:bg-accent hover:text-accent-fg transition-colors group relative">
+            <GraduationCap className="w-5 h-5" />
+            <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-foreground text-background px-2 py-1 text-xs opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">IITM Profile</span>
+          </a>
         </div>
+        <div className="text-muted-fg text-center">COPYRIGHT 2026 PRANAV AGGARWAL</div>
       </footer>
     </section>
   )
