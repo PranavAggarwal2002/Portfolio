@@ -75,7 +75,7 @@ export function ProfileSection() {
               FIG. 00
             </div>
             <div className="aspect-square bg-muted brutal-border mb-6 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
-               <img src="/profile.jpg" alt="Pranav Aggarwal" className="object-cover w-full h-full" />
+               <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Pranav Aggarwal" className="object-cover w-full h-full" />
             </div>
 
             <div className="space-y-4 font-mono text-sm">

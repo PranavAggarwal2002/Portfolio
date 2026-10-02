@@ -35,7 +35,7 @@ export function CollaborateSection() {
               <a href="mailto:pranawal2002@gmail.com" className="brutal-btn bg-background text-foreground hover:bg-muted inline-flex items-center justify-center gap-2">
                 Start a conversation <ArrowUpRight className="w-4 h-4" />
               </a>
-              <a href="/resume.pdf" target="_blank" className="brutal-btn bg-accent text-accent-fg border-background shadow-[4px_4px_0_0_var(--background)] hover:shadow-[2px_2px_0_0_var(--background)] inline-flex items-center justify-center gap-2">
+              <a href="https://drive.google.com/file/d/1Hss8v_q5fawOxOV_vOkRbpiy2ygNIrnB/view?usp=sharing" target="_blank" className="brutal-btn bg-accent text-accent-fg border-background shadow-[4px_4px_0_0_var(--background)] hover:shadow-[2px_2px_0_0_var(--background)] inline-flex items-center justify-center gap-2">
                 <FileText className="w-4 h-4" /> View Résumé
               </a>
             </div>

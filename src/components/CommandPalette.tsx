@@ -64,7 +64,7 @@ export function CommandPalette({ open, setOpen, toggleTheme, isDark }: { open: b
                 {isDark ? <Sun className="mr-2 h-4 w-4" /> : <Moon className="mr-2 h-4 w-4" />}
                 <span>Toggle Theme</span>
               </Command.Item>
-              <Command.Item onSelect={() => { window.open('/resume.pdf', '_blank'); setOpen(false); }} className="relative flex cursor-pointer select-none items-center rounded-sm px-2 py-2 text-sm outline-none hover:bg-accent hover:text-accent-fg data-[selected=true]:bg-accent data-[selected=true]:text-accent-fg">
+              <Command.Item onSelect={() => { window.open('https://drive.google.com/file/d/1Hss8v_q5fawOxOV_vOkRbpiy2ygNIrnB/view?usp=sharing', '_blank'); setOpen(false); }} className="relative flex cursor-pointer select-none items-center rounded-sm px-2 py-2 text-sm outline-none hover:bg-accent hover:text-accent-fg data-[selected=true]:bg-accent data-[selected=true]:text-accent-fg">
                 <Download className="mr-2 h-4 w-4" />
                 <span>Download CV</span>
               </Command.Item>
