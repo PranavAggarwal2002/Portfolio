@@ -28,7 +28,7 @@ export function Chatbot() {
         className="fixed bottom-6 right-6 z-40 brutal-btn bg-accent text-accent-fg flex items-center gap-2 !px-4 !py-3 shadow-2xl"
       >
         <MessageSquare className="h-5 w-5" />
-        <span>ASK PRANAV</span>
+        <span>ASK AI ASSISTANT</span>
       </button>
 
       <AnimatePresence>
