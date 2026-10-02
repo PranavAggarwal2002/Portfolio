@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f5f5f0;
+    --foreground: #0a0a0c;
+    --border: #111111;
+    --accent: #222222;
+    --accent-fg: #f5f5f0;
+    --muted: #e0e0d8;
+    --muted-fg: #555555;
+  }
+
+  .dark {
+    --background: #0a0a0c;
+    --foreground: #f5f5f0;
+    --border: #333333;
+    --accent: #f5f5f0;
+    --accent-fg: #0a0a0c;
+    --muted: #1a1a1c;
+    --muted-fg: #999999;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    /* Visible structural grid lines using background image */
+    background-image: 
+      linear-gradient(to right, var(--border) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    background-position: center top;
+  }
+
+  /* Brutalist border utilities */
+  .brutal-border {
+    @apply border-2 border-border;
+  }
+
+  .brutal-shadow {
+    @apply shadow-[4px_4px_0_0_var(--border)];
+  }
+
+  .dark .brutal-shadow {
+    @apply shadow-[4px_4px_0_0_var(--border)];
+  }
+
+  .brutal-btn {
+    @apply brutal-border brutal-shadow bg-background px-4 py-2 font-mono text-sm uppercase font-bold hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_0_var(--border)] transition-all active:translate-x-[4px] active:translate-y-[4px] active:shadow-none;
+  }
+
+  .brutal-card {
+    @apply brutal-border brutal-shadow bg-background p-6;
+  }
+}
