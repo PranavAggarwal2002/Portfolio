@@ -74,7 +74,7 @@ export function ProfileSection() {
             <div className="absolute -top-3 -right-3 bg-accent text-accent-fg font-mono text-xs font-bold px-2 py-1 brutal-border z-10">
               FIG. 00
             </div>
-            <div className="aspect-square bg-muted brutal-border mb-6 flex items-center justify-center overflow-hidden grayscale hover:grayscale-0 transition-all duration-500">
+            <div className="aspect-square bg-muted brutal-border mb-6 flex items-center justify-center overflow-hidden grayscale-0 hover:grayscale dark:grayscale dark:hover:grayscale-0 transition-all duration-500">
                <img src={`${import.meta.env.BASE_URL}profile.jpg`} alt="Pranav Aggarwal" className="object-cover w-full h-full" />
             </div>
 
